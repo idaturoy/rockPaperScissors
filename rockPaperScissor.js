@@ -48,6 +48,7 @@ function announcer(message){
 buttons.forEach(btn => { 
     btn.addEventListener('click', function(){
     score = playRound(btn.id, computerPlay());
+    game(score)
     //console.log(score);
     //console.log(game(score));
     playerScore.textContent = scorePlayer;
